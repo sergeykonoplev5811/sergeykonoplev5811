@@ -30,6 +30,17 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_languages_ignored: FreeMarker, Sass, gherkin
 
+          
+      - name: Detailed display
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: sergeykonoplev5811
+          base: metadata
+          plugin_achievements: yes
+          plugin_achievements_only: polyglot, developer, deployer, automator
+
 
       - name: Achievements
         uses: lowlighter/metrics@latest
@@ -40,21 +51,11 @@ jobs:
           base: metadata
           output_action: gist
           plugin_achievements: yes
-          plugin_achievements_only: >-
-            polyglot, developer, member, deployer, contributor, influencer, helper, follower,
-            stargazer, maintainer, chatter, inspirer, automator, infographile
+          plugin_achievements_only: polyglot, developer, member, deployer, contributor, influencer, helper, follower, stargazer, maintainer, chatter, inspirer, automator, infographile
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
 
-      - name: Detailed display
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: sergeykonoplev5811
-          base: metadata
-          plugin_achievements: yes
-          plugin_achievements_only: polyglot, developer, deployer, automator
+
 
 
 
