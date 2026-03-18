@@ -4,3 +4,8 @@
 <img src="metrics.plugin.achievements.compact.svg" width="400"/>
 
 <img src="metrics.plugin.achievements.svg" width="400"/>
+
+
+metrics.base.svg
+
+<img src="metrics.base.svg" width="400"/>
