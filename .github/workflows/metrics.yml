@@ -52,8 +52,8 @@ jobs:
           base: ""
           plugin_achievements: yes
           plugin_achievements_display: compact
-          plugin_achievements_threshold: 0  # Важно: число, не строка!
-          plugin_achievements_limit: 0  # 0 = без лимита
+          plugin_achievements_threshold: 0
+          plugin_achievements_limit: 0
 
 
 
