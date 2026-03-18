@@ -19,13 +19,13 @@ jobs:
         with:
           filename: metrics.plugin.achievements.compact.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          user: sergeykonoplev5811
+          base: metabase
           plugin_achievements: yes
           plugin_achievements_only: >-
-            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-            scripter, packager, explorer, infographile, manager
+            polyglot, stargazer, sponsor, deployer
           plugin_achievements_display: compact
-          plugin_achievements_threshold: X
+          plugin_achievements_threshold: 2
 
 
       - name: Detailed display
@@ -33,7 +33,8 @@ jobs:
         with:
           filename: metrics.plugin.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          user: sergeykonoplev5811
+          base: metabase
           plugin_achievements: yes
           plugin_achievements_only: polyglot, developer, deployer, automator
 
