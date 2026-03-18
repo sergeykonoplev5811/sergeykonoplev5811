@@ -1,4 +1,11 @@
 # QA Engineer
-<!-- [<img align="left" width="400" alt="Languages" src="metrics.svg">](#) -->
-[<img align="right" width="400" alt="Achievements" src="metrics.plugin.achievements.compact.svg">](#)
-[<img align="right" width="400" alt="Detailed achievements" src="metrics.plugin.achievements.svg">](#)
+<table>
+  <tr>
+    <td><img src="metrics.svg" width="400"/></td>
+    <td><img src="metrics.plugin.achievements.compact.svg" width="400"/></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img src="metrics.plugin.achievements.svg" width="400"/></td>
+  </tr>
+</table>
