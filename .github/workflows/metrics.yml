@@ -14,22 +14,14 @@ jobs:
       contents: write
     steps:
 
-
       - name: Achievements
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.plugin.achievements.compact.svg
+          filename: test.svg
           user: sergeykonoplev5811
           base: ""
-          output_action: gist
           plugin_achievements: yes
-          plugin_achievements_only: >-
-            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-            scripter, packager, explorer, infographile, manager
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: 0
-
 
 
 
