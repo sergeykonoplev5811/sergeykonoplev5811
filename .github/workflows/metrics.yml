@@ -1,4 +1,4 @@
-name: Metrics action
+name: Metrics
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -9,7 +9,7 @@ on:
 
 jobs:
   metrics:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
@@ -21,10 +21,14 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.plugin.achievements.compact.svg
           user: sergeykonoplev5811
-          base: metadata
+          base: ""
           output_action: gist
           plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
           plugin_achievements_display: compact
+          plugin_achievements_threshold: X
 
 
 
