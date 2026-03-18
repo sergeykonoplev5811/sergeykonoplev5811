@@ -17,7 +17,7 @@ jobs:
       - name: Update metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
           user: sergeykonoplev5811
           committer_message: "chore: update ${filename}"
@@ -34,7 +34,7 @@ jobs:
       - name: Achievements
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.plugin.achievements.compact.svg
           user: sergeykonoplev5811
           base: metadata
@@ -50,7 +50,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.achievements.svg
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           user: sergeykonoplev5811
           base: metadata
           plugin_achievements: yes
@@ -64,5 +64,5 @@ jobs:
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@main
         with:
-          retain_days: 2
-          keep_minimum_runs: 2
+          retain_days: 5
+          keep_minimum_runs: 5
